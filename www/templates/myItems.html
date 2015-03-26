@@ -1,0 +1,21 @@
+<ion-view title="My Items" id="myItems">
+    <ion-nav-bar>
+        <ion-nav-buttons side="left">
+            <button class="button button-icon icon ion-navicon" ng-click="openPopover($event)"></button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-content class="myItems has-header padding" scroll="false">
+        <td-cards>
+            <td-card ng-repeat="post in model.currentPosts" on-destroy="cardDestroyed($index)"
+                     on-transition-left="cardTransitionedLeft($index)"
+                     on-transition-right="cardTransitionedRight($index)">
+                <div class="image">
+                    <div class="no-text">NOPE</div>
+                    <img ng-src="http://ecx.images-amazon.com/images/I/91Ghr18vgsL._UY500_.jpg" />
+                    <div class="yes-text">LIKE</div>
+                </div>
+            </td-card>
+        </td-cards>
+    </ion-content>
+</ion-view>

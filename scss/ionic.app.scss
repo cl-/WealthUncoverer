@@ -1,0 +1,551 @@
+// Override Ionic and define variables
+@import "variables";
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+// Include all of Ionicons
+@import "www/lib/ionicons/scss/ionicons";
+
+// <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Oswald:400,700,300|Yanone+Kaffeesatz:400,700,300' rel='stylesheet' type='text/css'>
+// @import url(http://fonts.googleapis.com/css?family=Fjalla+One|Oswald:400,700,300|Yanone+Kaffeesatz:400,700,300);
+
+// Include custom styles
+@import "base";
+@import "list";
+@import "bar";
+@import "map";
+@import "spinner";
+@import "button";
+@import "tdcards";
+@import "slide-box";
+@import "input";
+@import "popup";
+
+#splash {
+  background-image: url('../img/splash.jpg');
+  background-size: cover;
+  background-position: left;
+
+  -webkit-transition: background-position 0.2s ease-in-out;
+  transition: background-position 0.2s ease-in-out;
+
+  // Override default Ionic view inline styling
+  -webkit-transition-duration: 0.2s !important;
+  transition-duration: 0.2s !important;
+
+  .bar,
+  .scroll-content {
+    //background-color: rgba(255, 255, 255, 0.9);
+    border: 0;
+  }
+  .appName {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .myWhteBtn {
+    margin: 10px;
+    border-radius: 7px;
+    text-align: left;
+    width: 92%;
+  }
+  .myWhteBtn {
+    border-color: #ddd;
+    background-color: #fff;
+    color: #444;
+  }
+  .myWhteBtn.active, .myWhteBtn.activated {
+    border-color: #ccc;
+    background-color: #fafafa;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
+  }
+
+  .bottomRow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+#uncoverJessica {
+  background-image: url('../img/screen2.jpg');
+  background-size: cover;
+  background-position: left;
+
+  -webkit-transition: background-position 0.2s ease-in-out;
+  transition: background-position 0.2s ease-in-out;
+
+  // Override default Ionic view inline styling
+  -webkit-transition-duration: 0.2s !important;
+  transition-duration: 0.2s !important;
+
+  .bar,
+  .scroll-content {
+    //background-color: rgba(255, 255, 255, 0.9);
+    border: 0;
+  }
+  .appName {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .myWhteBtn {
+    margin: 10px;
+    border-radius: 7px;
+    text-align: left;
+    width: 92%;
+  }
+  .myWhteBtn {
+    border-color: #ddd;
+    background-color: #fff;
+    color: #444;
+  }
+  .myWhteBtn.active, .myWhteBtn.activated {
+    border-color: #ccc;
+    background-color: #fafafa;
+    box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
+  }
+
+  .bottomRow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+#hiddenWealth {
+  .bar {
+    border: none;
+  }
+  .title {
+    color: #cc2311;
+  }
+
+  .hiddenWealthBody {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(181,181,181,0.65) 70%);
+
+    .paneTop {
+      font-family: 'Oswald', sans-serif;
+      text-align: center;
+      margin: 10px 0;
+
+      .row0 {
+        margin: 15px 0;
+
+        .points {
+          color: black;
+          font-size: 4em;
+          font-weight: bold;
+          height: 1em;
+        }
+        .label {
+          text-align: center;
+          color: rgba(100, 100, 100, 1);
+          font-size: 1em;
+          text-transform: uppercase;
+        }
+      }
+      .row1 {
+        margin: 15px 0;
+
+        .left {
+          color: blue;
+        }
+        .right {
+          color: red;
+        }
+        .points {
+          font-size: 3em;
+          font-weight: bold;
+          height: 1em;
+        }
+        .label {
+          text-align: center;
+          color: rgba(100, 100, 100, 1);
+          font-size: 1em;
+          text-transform: uppercase;
+        }
+      }
+      .row2 {
+        margin: 20px 0;
+
+        .points {
+          font-size: 2em;
+          font-weight: bold;
+          height: 2em;
+        }
+        .label {
+          text-align: center;
+          color: rgba(100, 100, 100, 1);
+          font-size: 1em;
+          text-transform: uppercase;
+        }
+        .icon {
+          font-size: 2.5em;
+        }
+      }
+    }
+    .paneBottom {
+      background: rgba(25,25,25,1);
+      min-height: 1px;
+    }
+  }
+}
+
+
+#virtualInvestment {
+  .bar {
+    border: none;
+  }
+  .title {
+    color: #cc2311;
+  }
+  .tabs-background-dark-and-red .tabs, .tabs-background-dark-and-red > .tabs {
+    background-color: #444;
+    background-image: linear-gradient(0deg, #111, #111 50%, transparent 50%);
+    border-color: #111;
+  }
+  .tabs-background-dark-and-red .tab-item-active {
+    border-color: #cc2311;
+    background-color: #cc2311;
+    //box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
+  }
+
+  .tabs-color-light-and-red .tab-item {
+    color: rgba(255, 255, 255, 1);
+    opacity: 1;
+  }
+  .tabs-color-light-and-red .tab-item .badge {
+    opacity: 0.4;
+  }
+  .tabs-color-light-and-red .tab-item.tab-item-active,
+  .tabs-color-light-and-red .tab-item.active,
+  .tabs-color-light-and-red .tab-item.activated {
+    color: #fff;
+    border: 0 solid #fff;
+  }
+  .tabs-color-light-and-red .tab-item.tab-item-active .badge,
+  .tabs-color-light-and-red .tab-item.active .badge,
+  .tabs-color-light-and-red .tab-item.activated .badge {
+    opacity: 1;
+  }
+
+  .familyTimeBody {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(181, 181, 181, 0.65) 100%);
+
+    .pointHeader {
+      font-family: 'Oswald', sans-serif;
+      text-align: center;
+      margin: 20px 0;
+
+      .numeric {
+        margin: 10px 0;
+
+        .points {
+          color: black;
+          font-size: 64px;
+          font-weight: bold;
+          height: 72px;
+        }
+        .change {
+          color: green;
+          font-size: 20px;
+          position: absolute;
+          top: 0;
+          right: 5px;
+        }
+      }
+      .level {
+        text-align: center;
+        color: rgba(100, 100, 100, 1);
+        font-size: 20px;
+
+        .number {
+          text-transform: uppercase;
+        }
+      }
+    }
+    .tradesBar {
+      position: relative;
+      height: 50px;
+      margin: -50px 0 42px;
+
+      .tab-item {
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: black;
+        border-color: transparent;
+      }
+      .tab-item.active {
+        color: #cc2311;
+        border-color: #cc2311;
+      }
+
+      .tabs-background-clear .tabs, .tabs-background-clear > .tabs {
+        background-color: transparent;
+        background-image: none;
+        border-color: transparent;
+      }
+      .tabs-background-clear .tab-item-active {
+        border-color: #cc2311;
+        background-color: #cc2311;
+        //box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
+      }
+    }
+    .tradesHistory {
+      background: white;
+
+      .input-label {
+        width: 100%;
+        max-width: inherit;
+        display: block;
+
+        .histStock {
+          font-weight: bold;
+          color: black;
+          font-size: 1.2em;
+        }
+        .histChangeA {
+          float: right;
+          font-size: 1.1em;
+          font-weight: bold;
+        }
+        .red {
+          color: red;
+        }
+        .green {
+          color: green;
+        }
+        .histChangeP {
+          float: right;
+          font-size: 0.9em;
+          color: black;
+        }
+        .histTime {
+          font-size: 0.9em;
+          color: rgba(100, 100, 100, 1);
+        }
+      }
+    }
+  }
+}
+
+#virtualInvestment {
+  .bar {
+    border: none;
+  }
+  .title {
+    color: #cc2311;
+  }
+  .tabs-background-dark-and-red .tabs, .tabs-background-dark-and-red > .tabs {
+    background-color: #444;
+    background-image: linear-gradient(0deg, #111, #111 50%, transparent 50%);
+    border-color: #111;
+  }
+  .tabs-background-dark-and-red .tab-item-active {
+    border-color: #cc2311;
+    background-color: #cc2311;
+    //box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
+  }
+
+  .tabs-color-light-and-red .tab-item {
+    color: rgba(255, 255, 255, 1);
+    opacity: 1;
+  }
+  .tabs-color-light-and-red .tab-item .badge {
+    opacity: 0.4;
+  }
+  .tabs-color-light-and-red .tab-item.tab-item-active,
+  .tabs-color-light-and-red .tab-item.active,
+  .tabs-color-light-and-red .tab-item.activated {
+    color: #fff;
+    border: 0 solid #fff;
+  }
+  .tabs-color-light-and-red .tab-item.tab-item-active .badge,
+  .tabs-color-light-and-red .tab-item.active .badge,
+  .tabs-color-light-and-red .tab-item.activated .badge {
+    opacity: 1;
+  }
+
+  .portfolio {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(181,181,181,0.65) 100%);
+
+    .pointHeader {
+      font-family: 'Oswald', sans-serif;
+      text-align: center;
+      margin: 20px 0;
+
+      .numeric {
+        margin: 10px 0;
+
+        .points {
+          color: black;
+          font-size: 64px;
+          font-weight: bold;
+          height: 72px;
+        }
+        .change {
+          color: green;
+          font-size: 20px;
+          position: absolute;
+          top: 0;
+          right: 5px;
+        }
+      }
+      .level {
+        text-align: center;
+        color: rgba(100, 100, 100, 1);
+        font-size: 20px;
+
+        .number {
+          text-transform: uppercase;
+        }
+      }
+    }
+    .tradesBar {
+      position: relative;
+      height:50px;
+      margin: -50px 0 42px;
+
+      .tab-item {
+        font-family: 'Oswald', sans-serif;
+        font-weight: bold;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: black;
+        border-color: transparent;
+      }
+      .tab-item.active {
+        color: #cc2311;
+        border-color: #cc2311;
+      }
+
+      .tabs-background-clear .tabs, .tabs-background-clear > .tabs {
+        background-color: transparent;
+        background-image: none;
+        border-color: transparent;
+      }
+      .tabs-background-clear .tab-item-active {
+        border-color: #cc2311;
+        background-color: #cc2311;
+        //box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.15);
+      }
+    }
+    .tradesHistory {
+      background: white;
+
+      .input-label {
+        width: 100%;
+        max-width: inherit;
+        display: block;
+
+        .histStock {
+          font-weight: bold;
+          color: black;
+          font-size: 1.2em;
+        }
+        .histChangeA {
+          float: right;
+          font-size: 1.1em;
+          font-weight: bold;
+        }
+        .red {
+          color: red;
+        }
+        .green {
+          color: green;
+        }
+        .histChangeP {
+          float: right;
+          font-size: 0.9em;
+          color: black;
+        }
+        .histTime {
+          font-size: 0.9em;
+          color: rgba(100,100,100,1);
+        }
+      }
+    }
+  }
+
+  .milesForMiles {
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(181,181,181,0.65) 70%);
+
+    .paneTop {
+      font-family: 'Oswald', sans-serif;
+      text-align: center;
+      margin: 10px 0;
+
+      .row0 {
+        margin: 15px 0;
+
+        .points {
+          color: black;
+          font-size: 4em;
+          font-weight: bold;
+          height: 1em;
+        }
+        .label {
+          text-align: center;
+          color: rgba(100, 100, 100, 1);
+          font-size: 1em;
+          text-transform: uppercase;
+        }
+      }
+      .row1 {
+        margin: 15px 0;
+
+        .left {
+          color: blue;
+        }
+        .right {
+          color: red;
+        }
+        .points {
+          font-size: 3em;
+          font-weight: bold;
+          height: 1em;
+        }
+        .label {
+          text-align: center;
+          color: rgba(100, 100, 100, 1);
+          font-size: 1em;
+          text-transform: uppercase;
+        }
+      }
+      .row2 {
+        margin: 20px 0;
+
+        .points {
+          font-size: 2em;
+          font-weight: bold;
+          height: 2em;
+        }
+        .label {
+          text-align: center;
+          color: rgba(100, 100, 100, 1);
+          font-size: 1em;
+          text-transform: uppercase;
+        }
+        .icon {
+          font-size: 2.5em;
+        }
+      }
+    }
+    .paneBottom {
+      background: rgba(25,25,25,1);
+      min-height: 1px;
+    }
+  }
+}
