@@ -5,17 +5,20 @@
         </ion-nav-buttons>
     </ion-nav-bar>
 
-    <ion-content class="myItems has-header padding" scroll="false">
-        <td-cards>
-            <td-card ng-repeat="post in model.currentPosts" on-destroy="cardDestroyed($index)"
-                     on-transition-left="cardTransitionedLeft($index)"
-                     on-transition-right="cardTransitionedRight($index)">
-                <div class="image">
-                    <div class="no-text">NOPE</div>
-                    <img ng-src="http://ecx.images-amazon.com/images/I/91Ghr18vgsL._UY500_.jpg" />
-                    <div class="yes-text">LIKE</div>
-                </div>
-            </td-card>
-        </td-cards>
+    <ion-content class="myItemsBody has-header padding" scroll="true">
+        <div class="list card" ng-repeat="item in currItems">
+            <div class="customItem item item-avatar">
+                <img ng-src="{{ item.imgUrl }}" class="item-image-img">
+                <h2>{{ item.name }}</h2>
+                <p>{{ item.price }}</p>
+            </div>
+            <div class="item item-image">
+                <img src="{{ item.imgUrl }}">
+            </div>
+            <a class="item item-icon-left assertive" href="#">
+                <i class="icon {{ item.icon }}"></i>
+                {{ item.price }}
+            </a>
+        </div>
     </ion-content>
 </ion-view>
