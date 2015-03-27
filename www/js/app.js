@@ -59,7 +59,7 @@ var app = angular.module('WealthExplorer', [
           views: {
               'menuContent': {
                   templateUrl: 'templates/overviewWealth.html',
-                  controller: ''
+                  controller: 'OverviewWealthCtrl'
               }
           }
       })
