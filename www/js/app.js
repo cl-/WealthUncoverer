@@ -81,6 +81,25 @@ var app = angular.module('WealthExplorer', [
               }
           }
       })
+      .state('app.itemDetails', {
+          url: '/itemDetails',
+          views: {
+              'menuContent': {
+                  templateUrl: 'templates/itemDetails.html',
+                  controller: 'ItemDetailsCtrl'
+              }
+          }
+      })
+      .state('app.itemSold', {
+          url: '/itemSold',
+          views: {
+              'menuContent': {
+                  templateUrl: 'templates/itemSold.html',
+                  controller: 'ItemSoldCtrl'
+              }
+          }
+      })
+
 
 
       .state('app.myWealth', {
@@ -214,6 +233,8 @@ var app = angular.module('WealthExplorer', [
   //$urlRouterProvider.otherwise('/app/virtualInvestment/trade');
   //$urlRouterProvider.otherwise('/app/virtualInvestment/compete');
   //$urlRouterProvider.otherwise('/app.hiddenWealth');
+  //$urlRouterProvider.otherwise('/app/myItems');
+  // $urlRouterProvider.otherwise('/app/home/list');
 })
 
 .constant('$ionicLoadingConfig', {

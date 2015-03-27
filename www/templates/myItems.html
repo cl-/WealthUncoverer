@@ -5,19 +5,25 @@
         </ion-nav-buttons>
     </ion-nav-bar>
 
-    <ion-content class="myItemsBody has-header padding" scroll="true">
-        <div class="list card" ng-repeat="item in currItems">
-            <div class="customItem item item-avatar">
+    <ion-content class="myItemsBody has-header" scroll="true">
+        <div class="list" ng-show="hasRecentlySold">
+            <div class="item item-divider item-positive">
+                Recently Sold
+            </div>
+            <a class="item item-thumbnail-left" href="#" ng-repeat="item in recentlySoldItems">
                 <img ng-src="{{ item.imgUrl }}" class="item-image-img">
                 <h2>{{ item.name }}</h2>
                 <p>{{ item.price }}</p>
+            </a>
+        </div>
+        <div class="list">
+            <div class="item item-divider item-positive">
+                Current Items
             </div>
-            <div class="item item-image">
-                <img src="{{ item.imgUrl }}">
-            </div>
-            <a class="item item-icon-left assertive" href="#">
-                <i class="icon {{ item.icon }}"></i>
-                {{ item.price }}
+            <a class="item item-thumbnail-left" href="#" ng-repeat="item in currentItems" ng-click="showdetails(item)">
+                <img ng-src="{{ item.imgUrl }}" class="item-image-img">
+                <h2>{{ item.name }}</h2>
+                <p>{{ item.price }}</p>
             </a>
         </div>
     </ion-content>

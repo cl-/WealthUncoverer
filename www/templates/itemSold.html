@@ -1,0 +1,32 @@
+<ion-view title="Item Sold" id="itemSold">
+    <ion-nav-bar>
+        <ion-nav-buttons side="left">
+            <button class="button button-clear" ng-click="myGoBack()">
+                <i class="ion-arrow-left-c"></i> Back
+            </button>
+        </ion-nav-buttons>
+    </ion-nav-bar>
+
+    <ion-content class="itemSoldBody has-header padding" scroll="false">
+        <div class="list card">
+            <div class="item item-image">
+                <img src="{{ item.imgUrl }}" class="item-image-img" />
+            </div>
+        </div>
+        <div>
+            <img src="img/soldStamp.png" class="soldStamp" />
+        </div>
+        <div class="list list-inset">
+            <div class="item item-positive">
+                Send to
+            </div>
+            <div class="item">
+                100 Cyberport Road<br/>
+                Pok Lum Fu, Hong Kong
+            </div>
+        </div>
+        <div class="soldBanner">
+            <img src="img/section01-banner.jpg" class="soldBannerImg" />
+        </div>
+    </ion-content>
+</ion-view>

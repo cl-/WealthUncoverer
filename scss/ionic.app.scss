@@ -202,10 +202,44 @@
 }
 
 #myItems {
-  .myItemsBody {
-    .item-image-img {
-      max-height: 100px;
-    }
-    //*[@id="myItems"]/ion-content/div[1]/div[1]/div[2]/img
+  .item h2 {
+    white-space: normal;
+  }
+}
+
+#itemDetails {
+  .item-image-img {
+    max-width: 100px;
+    margin: 5px 0;
+  }
+  .customItem h2, .customItem p {
+    white-space: normal;
+  }
+}
+
+#itemSold {
+  .item-image-img {
+    max-height: 200px;
+    margin: 5px 0;
+  }
+  .customItem h2, .customItem p {
+    white-space: normal;
+  }
+  .soldBanner {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .soldStamp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 250px;
+
+  }
+  .soldBannerImg {
+
   }
 }
