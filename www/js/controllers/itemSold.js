@@ -29,7 +29,7 @@ app
                 id: 1,
                 name: "Marc Fisher Day by Day Horizontal Tote",
                 imgUrl: "http://slimages.macys.com/is/image/MCY/products/9/optimized/1940059_fpx.tif",
-                price: "$449.99",
+                price: "$200.00",
                 icon: "ion-music-note",
                 description: "Sleek and styled for your daily endeavors, this classic carryall from Marc Fisher is the perfect choice. Rendered in smooth faux leather with polished hardware, the generous interior stashes all your here-to-there essentials."
             },
