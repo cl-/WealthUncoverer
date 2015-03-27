@@ -81,6 +81,16 @@ var app = angular.module('WealthExplorer', [
               }
           }
       })
+
+      .state('app.dailyUncovering', {
+          url: '/dailyUncovering',
+          views: {
+              'menuContent': {
+                  templateUrl: 'templates/dailyUncovering.html',
+                  controller: ''
+              }
+          }
+      })
       .state('app.myItems', {
           url: '/myItems',
           views: {
