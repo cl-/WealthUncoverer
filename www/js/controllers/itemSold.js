@@ -50,7 +50,7 @@ app
             }
         ];
 
-        var itemDetailId = localStorageService.get('itemDetails');
+        var itemDetailId = localStorageService.get('itemSold');
         $scope.item = $scope.currentItems[itemDetailId];
 
 

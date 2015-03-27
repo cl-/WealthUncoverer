@@ -65,4 +65,8 @@ app
   $scope.$on('event:auth-loginConfirmed', function() {
     console.log('handling event:auth-loginConfirmed...');
   });
+
+    // clear out localstorage on startup
+    localStorageService.set('itemSold', null);
+    localStorageService.set('itemDetails', null);
 });

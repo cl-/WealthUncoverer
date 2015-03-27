@@ -52,6 +52,11 @@ app
     $scope.hasRecentlySold = false;
     $scope.recentlySoldItems = [];
 
+    //var soldItemId = localStorageService.get('itemSold');
+    //if (null != soldItemId) {
+    //    $scope.recentlySoldItems.append();
+    //}
+
     // Triggered on a button click, or some other target
     $scope.showdetails = function(item) {
         localStorageService.set('itemDetails', item.id);

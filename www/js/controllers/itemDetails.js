@@ -55,6 +55,9 @@ app
 
     // Triggered on a button click, or some other target
     $scope.onSell = function() {
+        var soldItemId = itemDetailId;
+        localStorageService.set('itemSold', soldItemId);
+
         $state.go("app.itemSold");
     };
 
