@@ -90,6 +90,15 @@ var app = angular.module('WealthExplorer', [
               }
           }
       })
+      .state('app.itemList2', {
+          url: '/ItemsList2',
+          views: {
+              'menuContent': {
+                  templateUrl: 'templates/ItemList2.html',
+                  controller: 'ItemList2Ctrl'
+              }
+          }
+      })
       .state('app.itemDetails', {
           url: '/itemDetails',
           views: {

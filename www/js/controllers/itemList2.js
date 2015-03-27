@@ -1,7 +1,7 @@
 'use strict';
 app
 
-.controller('MyItemsCtrl', function(
+.controller('ItemList2Ctrl', function(
     $scope,
     $state,
     $timeout,
@@ -26,14 +26,6 @@ app
             description: "A tried-and-true tote dials up the cool quotient with this classic carryall offered in an array of colors and finishes from mod metallic to matte black."
         },
         {
-            id: 1,
-            name: "Marc Fisher Day by Day Horizontal Tote",
-            imgUrl: "http://slimages.macys.com/is/image/MCY/products/9/optimized/1940059_fpx.tif",
-            price: "$449.99",
-            icon: "ion-music-note",
-            description: "Sleek and styled for your daily endeavors, this classic carryall from Marc Fisher is the perfect choice. Rendered in smooth faux leather with polished hardware, the generous interior stashes all your here-to-there essentials."
-        },
-        {
             id: 2,
             name: "Nine West Hex 9 It Girl Small Shopper",
             imgUrl: "http://ecx.images-amazon.com/images/I/61SgPYGKboL._UX385_.jpg",
@@ -55,6 +47,18 @@ app
             price: "$10,000",
             description: "Valco Baby 2011 Quad Single Stroller Raven Black New Trimode Single w/ 4 wheels. Newly listed Valco Baby Tri-Mode Twin EX Stroller Candy Apple NEW In Box 2012 ,Raven is your choice- even the EX zip-out panel is black, Valco Single Tri-Mode",
             imgUrl: "img/stroller.jpg"
+        },
+    ];
+
+    $scope.hasRecentlySold = false;
+    $scope.recentlySoldItems = [
+        {
+            id: 1,
+            name: "Marc Fisher Day by Day Horizontal Tote",
+            imgUrl: "http://slimages.macys.com/is/image/MCY/products/9/optimized/1940059_fpx.tif",
+            price: "$449.99",
+            icon: "ion-music-note",
+            description: "Sleek and styled for your daily endeavors, this classic carryall from Marc Fisher is the perfect choice. Rendered in smooth faux leather with polished hardware, the generous interior stashes all your here-to-there essentials."
         },
     ];
 

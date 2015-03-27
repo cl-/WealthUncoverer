@@ -2,7 +2,7 @@
     <ion-nav-bar>
         <ion-nav-buttons side="left">
             <button class="button button-clear" ng-click="myGoBack()">
-                <i class="ion-arrow-left-c"></i> Back
+                <i class="ion-ios-arrow-back"></i> Back
             </button>
         </ion-nav-buttons>
     </ion-nav-bar>
@@ -22,8 +22,7 @@
             <div class="item item-image">
                 <img src="{{ item.imgUrl }}" class="item-image-img">
             </div>
-            <a class="item item-icon-left assertive" href="#">
-                <i class="icon {{ item.cash }}"></i>
+            <a class="item item-icon-left item-balanced" href="#">
                 Sell Value:
                 {{ item.price }}
             </a>

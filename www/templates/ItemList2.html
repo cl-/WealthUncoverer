@@ -7,6 +7,16 @@
 
     <ion-content class="myItemsBody has-header" scroll="true">
         <div class="list">
+            <div class="item item-divider item-balanced">
+                Recently Sold
+            </div>
+            <a class="item item-thumbnail-left" href="#" ng-repeat="item in recentlySoldItems">
+                <img ng-src="{{ item.imgUrl }}" class="item-image-img">
+                <h2>{{ item.name }}</h2>
+                <p>{{ item.price }}</p>
+            </a>
+        </div>
+        <div class="list">
             <div class="item item-divider item-positive">
                 Current Items
             </div>

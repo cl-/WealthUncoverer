@@ -205,6 +205,10 @@
   .item h2 {
     white-space: normal;
   }
+  .item p {
+    font-weight: bold;
+    font-size: 2em;
+  }
 }
 
 #itemDetails {
@@ -240,6 +244,9 @@
 
   }
   .soldBannerImg {
-
+//    background-color: black;
+  }
+  .paylahBannerImg {
+    width: 30px;
   }
 }

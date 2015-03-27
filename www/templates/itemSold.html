@@ -2,7 +2,7 @@
     <ion-nav-bar>
         <ion-nav-buttons side="left">
             <button class="button button-clear" ng-click="myGoBack()">
-                <i class="ion-arrow-left-c"></i> Back
+                <i class="ion-ios-arrow-back"></i> Back
             </button>
         </ion-nav-buttons>
     </ion-nav-bar>
@@ -26,7 +26,18 @@
             </div>
         </div>
         <div class="soldBanner">
+            <div class="list">
+                <a class="item item-avatar item-dark" href="#">
+                    <img src="img/paylah.png">
+                    <h2 style="color:white; font-weight: bold">{{ item.price }}</h2>
+                    <p style="color:rgb(200,200,200);">Credited to your Paylah account.</p>
+                </a>
+            </div>
+        </div>
+        <!--
+        <div class="soldBanner">
             <img src="img/section01-banner.jpg" class="soldBannerImg" />
         </div>
+        -->
     </ion-content>
 </ion-view>
