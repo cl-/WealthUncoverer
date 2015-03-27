@@ -3,70 +3,72 @@
         <ion-nav-buttons side="left">
             <button class="button button-icon icon ion-navicon" ng-click="openPopover($event)"></button>
         </ion-nav-buttons>
+
+        <ion-nav-buttons side="right">
+            <button class="button button-positive" ng-click="">Add Moment</button>
+        </ion-nav-buttons>
+        
     </ion-nav-bar>
 
+    <style>
+    .progress-bar {
+      width: 60%;
+      height: 20px;
+      background: #F5F9FC;
+      position: relative;
+      /*bottom: 44px;*/
+      z-index: 12; }
+    .increment {
+      padding-left:15%; color:black;
+      width: 5%;
+      height: 100%;
+      background: #017AFD;
+      transition: all .75s;}
+    .ion-clock{
+        font-size:30px;
+    }
+    </style>
+
     <ion-content class="familyTimeBody has-header">
-        <div class="paneUpper">
-            <div class="pointHeader">
-                <div class="numeric">
-                    <span class="change">+1.2%</span>
-                    <div class="points">$12,145</div>
-                </div>
-                <div class="clear"></div>
-                <div class="level">
-                    <span class="number">Level 1:</span>
-                    <span class="name">Beginner</span>
-                </div>
-            </div>
-            <div class="tradesBar">
-                <div class="tabs-striped tabs-top tabs-background-clear">
-                    <div class="tabs">
-                        <a class="tab-item active" href="#">
-                            Weekly
-                        </a>
-                        <a class="tab-item" href="#">
-                            Monthly
-                        </a>
-                        <a class="tab-item" href="#">
-                            Yearly
-                        </a>
-                    </div>
-                </div>
-            </div>
+        <div class="item item-energized" style="color:black"><!-- style="color:red" -->
+            <i class="ion-alert-circled"></i> &nbsp;Spend more time with your family.
         </div>
-        <div class="tradesHistory">
-            <ul class="list">
-                <label class="item item-stacked-label">
-                    <div class="input-label">
-                        <span class="histChangeA green">+$40</span>
-                        <span class="histStock">USD / JPY</span>
-                    </div>
-                    <div class="input-label">
-                        <span class="histChangeP">-2.5%</span>
-                        <span class="histTime">March 5, 3:33pm - Long</span>
-                    </div>
-                </label>
-                <label class="item item-stacked-label">
-                    <div class="input-label">
-                        <span class="histChangeA red">-$12</span>
-                        <span class="histStock">EUR / CHF</span>
-                    </div>
-                    <div class="input-label">
-                        <span class="histChangeP">-0.5%</span>
-                        <span class="histTime">March 4, 11:30am - Short</span>
-                    </div>
-                </label>
-                <label class="item item-stacked-label">
-                    <div class="input-label">
-                        <span class="histChangeA green">+$434</span>
-                        <span class="histStock">BABA</span>
-                    </div>
-                    <div class="input-label">
-                        <span class="histChangeP">+23.5%</span>
-                        <span class="histTime">March 1, 5:20am - Long</span>
-                    </div>
-                </label>
-            </ul>
+
+        <div class="item">
+            <img src="img/chart-bill-average.png">
         </div>
+        <div class="item item-divider item-dark">
+            Overview
+        </div>
+        <div class="item">
+            This Week <span class="item-note" style="color:black"><span id="familyTime">2</span>/10 hours</span>
+        </div>
+
+
+
+        <div class="item">
+                <div style="width:20%; margin-right:5%; float:left;">Husband</div>
+                <div class="progress-bar" style="float:left">
+                  <div class="increment" style="width:60%;">1hr 10min</div>
+                </div>
+                <span class="item-note" style="color:black"><i class="ion-clock addTime"></i> </span>
+                
+        </div>
+
+        <div class="item">
+                <div style="width:20%; margin-right:5%; float:left;">Daughter</div>
+                <div class="progress-bar" style="float:left">
+                  <div class="increment" style="width:20%;">40min</div>
+                </div>
+                <span class="item-note" style="color:black"><i class="ion-clock addTime"></i> </span>
+        </div>
+        <div class="item">
+                <div style="width:20%; margin-right:5%; float:left;">Parents</div>
+                <div class="progress-bar" style="float:left">
+                  <div class="increment" style="width:2%;">10min</div>
+                </div>
+                <span class="item-note" style="color:black"><i class="ion-clock addTime"></i> </span>
+        </div>
+        
     </ion-content>
 </ion-view>
