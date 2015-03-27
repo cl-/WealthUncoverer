@@ -24,7 +24,7 @@ app
         };
 
         $scope.onHiddenWealth = function() {
-            $state.go('app.hiddenWealth');
+            $state.go('app.overviewWealth');
         };
         $scope.onFamilyTime = function() {
             $state.go('app.familyTime');
