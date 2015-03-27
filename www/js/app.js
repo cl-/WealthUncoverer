@@ -54,6 +54,15 @@ var app = angular.module('WealthExplorer', [
               }
           }
       })
+      .state('app.overviewWealth', {
+          url: '/overviewWealth',
+          views: {
+              'menuContent': {
+                  templateUrl: 'templates/overviewWealth.html',
+                  controller: ''
+              }
+          }
+      })
       .state('app.hiddenWealth', {
           url: '/hiddenWealth',
           views: {
